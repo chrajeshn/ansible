@@ -1,0 +1,5 @@
+- name: Ping the srever
+  hosts: web
+  tasks: # list of tasks/modules/collections
+  - name: pinping the server
+    ansible.builtin.ping:
