@@ -12,6 +12,6 @@
     ansible.builtin.debug:
      msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
 
-  -name: print play leavel varible
+  - name: print play leavel varible
    ansibile.builtin.debug:
     msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
