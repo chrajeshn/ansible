@@ -1,4 +1,4 @@
-- name: Varibles From Files Prompt
+- name: Varibles From Prompt
   hosts: localhost
   vars_prompt:
   - name: USERNAME
