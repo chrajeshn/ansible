@@ -13,7 +13,7 @@
 
   - name: create user
     ansible.builtin.command:
-    when: USER.rc!=0 #Condition
+    when: USER.rc != 0 #Condition
 
   - name: say hello
     ansible.builtin.debug:
