@@ -10,7 +10,12 @@
     private: false
   tasks:
   - name: cgecking preference
-    vars:
-     WISHES: "Moring from Task varibles"  
+    # vars:
+    #  WISHES: "Moring from Task varibles"  
     ansible.builtin.debug:
       msg: "Hello, Good {{ WISHES }}"  
+
+
+ #1.Aruguments
+ #2.Task Level Varible
+
