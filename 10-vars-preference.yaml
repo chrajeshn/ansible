@@ -4,10 +4,10 @@
     WISHES: "Moring from Play varibles"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: WISHES
-    prompt: Please enter WISHES
-    private: false
+  # vars_prompt:
+  # - name: WISHES
+  #   prompt: Please enter WISHES
+  #   private: false
   tasks:
   - name: cgecking preference
     # vars:
@@ -19,4 +19,4 @@
  #1.Aruguments
  #2.Task Level Varible
  #3.Vars_file
-
+ #4.Prompt
