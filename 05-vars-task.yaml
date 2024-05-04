@@ -8,10 +8,10 @@
   tasks:
   - name: Print Override Information
     vars: #task leavel variables
-     Course: "Ansible"
+      Course: "Ansible"
     ansible.builtin.debug:
-     msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
+      msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
 
   - name: print play leavel varible
-   ansibile.builtin.debug:
-    msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
+    ansibile.builtin.debug:
+      msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
