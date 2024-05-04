@@ -1,0 +1,16 @@
+- name: Varibles Perfernce
+  hosts: localhost
+  vars:
+    WISHES: "Moring from Play varibles"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: WISHES
+    prompt: Please enter WISHES
+    private: false
+  tasks:
+  - name: cgecking preference
+    vars:
+     WISHES: "Moring from Task varibles"  
+    ansible.builtin.debug:
+      msg: "Hello, Good {{ WISHES }}"  
