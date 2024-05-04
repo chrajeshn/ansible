@@ -1,9 +1,9 @@
 - name: Varibles Perfernce
   hosts: localhost
-  # vars:
-  #   WISHES: "Moring from Play varibles"
-  vars_files:
-  - vars.yaml
+  vars:
+    WISHES: "Moring from Play varibles"
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: WISHES
     prompt: Please enter WISHES
@@ -18,5 +18,5 @@
 
  #1.Aruguments
  #2.Task Level Varible
- #3.Play Varible file
+ #3.Vars_file
 
