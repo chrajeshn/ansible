@@ -9,12 +9,12 @@
 
   - name: Print user information
     ansible.builtin.debug:
-      msg: "user info: {{ USER }}"
+      msg: "user info: {{USER}}"
 
-  - name: create user
-    ansible.builtin.command:
-    when: USER.rc != 0 #Condition
+  # - name: create user
+  #   ansible.builtin.command:
+  #   when: USER.rc != 0 #Condition
 
-  - name: say hello
-    ansible.builtin.debug:
-      msg: "Hello"
+  # - name: say hello
+  #   ansible.builtin.debug:
+  #     msg: "Hello"
