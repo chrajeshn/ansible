@@ -1,0 +1,17 @@
+- name: Varibles 
+  hosts: localhost
+  vars:
+    Course: "Teraform"
+    Trainer: "Siva Kumar"
+    Duration: "120Hours"
+
+  tasks:
+  - name: Print Override Information
+    vars: #task leavel variables
+     Course: "Ansible"
+    ansible.builtin.debug:
+     msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
+
+  -name: print play leavel varible
+   ansibile.builtin.debug:
+    msg: "Hi we are learing {{ Course }} from trainer {{ Trainer }}, duration {{ Duration }}."  
