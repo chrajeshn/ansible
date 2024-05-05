@@ -30,4 +30,13 @@
   tasks:
   - name: remove duplicate
     ansible.builtin.debug:
-      msg: "{{ number | unique }}"         
+      msg: "{{ number | unique }}"     
+
+- name: Print Min and Max
+  hosts: localhost
+  vars:
+    agrs: [22, 43, 45, 65, 77, 99]
+  tasks:
+  - name: print min and max
+    ansible.builtin.debug:
+      msg: "{{ args | min}}, {{ args | max }}"            
